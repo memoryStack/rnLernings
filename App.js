@@ -24,6 +24,11 @@ const App = () => {
       setData(['1', '2', '3', '4'])
     }, 2000)
   }, [])
+
+  const onChange = (data) => {
+    console.log('@@@@@@@ data', data)
+  }
+
   return (
     <View
       style={{
@@ -37,6 +42,7 @@ const App = () => {
           height: 200,
         }}
         data={data}
+        onChange={onChange}
       />
    </View>
   );
