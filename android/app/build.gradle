@@ -192,7 +192,9 @@ dependencies {
 
     implementation project(':react-native-fs')
 
-    implementation project(':rn-fetch-blob')                                                                      
+    implementation project(':rn-fetch-blob')     
+
+    implementation 'com.github.BlackBoxVision:material-wheel-view:v0.0.1'                                                                 
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
